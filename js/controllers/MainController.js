@@ -36,5 +36,12 @@ app.controller('MainController', ['$scope', function($scope) {
       count: 15
     }
   ];
+$scope.increase = function(exercice){
+  exercice.count++;
+}
+
+$scope.decrease = function(exercice){
+  exercice.count--;
+}
 
 }]);
